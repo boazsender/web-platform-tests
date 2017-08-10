@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>CSS Basic User Interface Test: box-sizing:border-box and CSS2.1 10.3.7</title>
+<link rel="author" title="Boaz Sender, Ali Juma, Robert Ma">
+<link rel="help" href="https://drafts.csswg.org/css-ui-3/#box-sizing">
+<link rel="match" href="reference/box-sizing-028-ref.html">
+<meta name="assert" content="when the input height minus the input padding minus
+                            the input border is smaller than the height of the
+                             text">
+<style>
+input {
+  width: 100px;
+	margin: 0px;
+	border: 1px solid black;
+	height: 30px;
+	padding: 10px;
+	font-size: 18px;
+	font-family: sans-serif;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+</style>
+<body>
+  <input type="text" value="foo">
+</body>
